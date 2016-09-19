@@ -1,5 +1,5 @@
 # SFDC - DocuSign Embedded Signing Ceremony
-Using SFDC Apex, this repo sends an envelope and then gives the url for an embedded Signing Ceremony. 
+Using SFDC Apex, this repo sends an envelope and then provides the url for an embedded Signing Ceremony. 
 
 After the signer completes the Signing Ceremony:
 
@@ -7,7 +7,8 @@ After the signer completes the Signing Ceremony:
 1. The signer's browser is redirected back to your SFDC app, to the url that you designated.
 The redirect includes an event query parameters with the outcome of the Signing Ceremony.
 
-The Apex class uses the DocuSign SOAP API.
+The Apex class obtains the url for the Signing Ceremony by using the [RequestRecipientToken](https://www.docusign.com/p/APIGuide/APIGuide.htm#Embedding Group/Pre-DocuSign Operations.htm) method from the DocuSign SOAP API.
+
 
 ## Installation 
 
